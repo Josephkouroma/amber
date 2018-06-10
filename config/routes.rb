@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   root "creatives#index"
+  # get "creatives/about"
+  get 'about' => 'creatives#about'
+  # match '#about' => 'creatives#about'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
